@@ -113,16 +113,26 @@ function getRange(numbers) {
  * @param {number[]} numbers an array of integers
  * @returns {number[]} the even numbers in the array
  */
+
 function getEvens(numbers) {
   // TODO
   const evens = [];
-  for(n of numbers){
+  // for(n of numbers){
+  //   if(n % 2 == 0){
+  //     evens.push(n);
+  //   }
+  // }
+  let n = 0;
+  for(let i = 0; i<numbers.length-1; i++){
+    n = numbers[i];
     if(n % 2 == 0){
       evens.push(n);
     }
   }
   return evens;
 }
+
+
 
 /**
  * @param {number[]} numbers an array of integers
